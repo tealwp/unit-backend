@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"github.com/tealwp/unit-backend/pkg/grpc"
 )
 
 func main() {
-	fmt.Println("hello")
+	grpc.Serve()
 }
