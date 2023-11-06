@@ -4,7 +4,7 @@ This repo is a template for projects setting up a backend service in golang that
 
 # Set-up Steps
 
-1. Make sure docker is installed and the ungine is running
+1. Make sure docker is installed and the docker engine is running
 
 2. Run the following to pull the database (postgresql) image 
 ```shell
