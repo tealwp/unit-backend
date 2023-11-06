@@ -1,8 +1,8 @@
-## Summary
+# Summary
 
 This repo is a template for projects setting up a backend service in golang that implements a grpc service. It requires a database connection be established. Currently it is setup to access a postgres database on localhost:5432.
 
-## Set-up Steps
+# Set-up Steps
 
 1. Make sure docker is installed and the ungine is running
 
@@ -50,28 +50,28 @@ go run main.go migrate ping
 go run main.go migrate up
 ```
 
-## Scripts
-# Test DB Connection (Ping)
+# Scripts
+## Test DB Connection (Ping)
 ```shell
 go run main.go migrate ping
 ```
 
-# Migrate Up
+## Migrate Up
 ```shell
 go run main.go migrate up
 ```
 
-# Migrate Down
+## Migrate Down
 ```shell
 go run main.go migrate down
 ```
 
-# Start GRPC Server
+## Start GRPC Server
 ```shell
 go run main.go grpc
 ```
 
-## GRPC Server
+# GRPC Server
 
 After starting the grpc server you can use grpcurl to test (locally or in the devcontainer)
 ```shell
