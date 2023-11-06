@@ -1,0 +1,30 @@
+{
+	"name": "Unit Backend",
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+			"ms-vscode.go",
+			"ms-azuretools.vscode-docker",
+			"golang.go",
+			"zxh404.vscode-proto3",
+			"pbkit.vscode-pbkit"
+		],
+		"settings": {
+			"editor.tabSize": 4,
+			"terminal.integrated.defaultProfile.linux": "zsh",
+			"terminal.integrated.profiles.linux": {
+			  "bash": {
+				"path": "bash",
+				"icon": "terminal-bash"
+			  },
+			  "zsh": {
+				"path": "zsh"
+			  }
+			}
+		}
+	  }
+	}
+  }

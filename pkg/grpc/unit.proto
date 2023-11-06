@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = "pkg/grpc/pb";
+
+message Event {
+  string name = 1;
+}
+
+message GetEventListRequest {}
+message GetEventListResponse { repeated Event events = 1; }
+
+message GetEventRequest {
+  int64 id = 1;
+}
+
+message GetEventResponse { 
+  Event event = 1; 
+}
+
+message CreateEventRequest {
+  Event event = 1;
+}
+
+message CreateEventResponse {
+  Event event = 1;
+}
+
+service Unit {
+  rpc GetEventList(GetEventListRequest) returns (GetEventListResponse) {}
+  rpc GetEvent(GetEventRequest) returns (GetEventResponse) {}
+  rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse) {}
+}

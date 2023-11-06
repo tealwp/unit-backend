@@ -1,9 +1,13 @@
 package main
 
 import (
-	"github.com/tealwp/unit-backend/pkg/grpc"
+	"github.com/tealwp/unit-backend/cmd"
+	"github.com/tealwp/unit-backend/pkg/cfg"
 )
 
 func main() {
-	grpc.Serve()
+	cfg := cfg.NewConfig()
+	if err := cmd.App(cfg); err != nil {
+		panic(err)
+	}
 }
