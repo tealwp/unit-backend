@@ -13,7 +13,7 @@ docker pull postgres
 
 3. Run the following to start a docker container on your local machine with postgres running, and portforward for local access.
     - change the <project-name> as needed
-    - change the database password as needed
+    - change the database password as needed (DB_PASSWORD will need to be change in the projects .env as well)
     - change the port as needed (DB_PORT will need to be change in the projects .env as well)
 ```shell
 docker run --name <project-name>-db -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres
